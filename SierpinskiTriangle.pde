@@ -1,16 +1,15 @@
 public void setup()
 {
+  background(0);
   int width;
   int height;
-  
   width = 800;
   height = 800;
 size(width,height);
 }
 public void draw()
 {
-
-  sierpinski(height/2,width/2,300);
+  sierpinski(width/5,height,500);
   
 }
 public void mouseDragged()//optional
