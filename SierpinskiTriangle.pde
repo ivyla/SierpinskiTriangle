@@ -5,21 +5,24 @@ public void setup()
   int height;
   width = 800;
   height = 800;
+
 size(width,height);
 }
 public void draw()
 {
-  sierpinski(width/5,height,500);
+  int length;
+  length = 500;
+  sierpinski(width/5,height,length);
   
 }
 public void mouseDragged()//optional
 {
-
+//
 }
 public void sierpinski(int x, int y, int len) 
 {
   noStroke();
-  if(len <= 100){
+  if(len <= 10){
    fill(255,0,0);
     triangle(x, y, x + len/2, y - len, x + len, y);
   
